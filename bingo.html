@@ -107,10 +107,39 @@
         {
             n.push(i)
         }
-        document.write(n)
+        //document.write(n)
         var g = []
         var o = []
+
+        function PreencherLista(NumeroInicial, NumeroFinal)
+        {
+            var retorno = []
+            for(var i = NumeroInicial; i< NumeroFinal; i++)
+            {
+                retorno.push(i)
+            }
+            return retorno
+        }
+
+        var b = PreencherLista(1,15)
+        var i = PreencherLista(16,30)
+        var n = PreencherLista(31,45)
+        var g = PreencherLista(46,60)
+        var o = PreencherLista(61,75)
+        var sorteio = PreencherLista(1,75)
+
+        function NumeroAletorio(NumeroMaximo)
+        {
+            var retorno = Math.random()
+            retorno = (retorno * NumeroMaximo)
+            retorno = Math.floor(retorno)
+            return retorno
+        }
+
+        document.writeln("<h1>" +NumeroAletorio(150)+ "<h1>")
+
+
     </script>
-    
+
 </body>
 </html>
